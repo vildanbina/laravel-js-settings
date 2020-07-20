@@ -1,0 +1,43 @@
+{
+    "name": "bexvibi/laravel-js-settings",
+    "description": "Laravel Settings in JavaScript",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "laravel 5",
+        "settings",
+        "i18n",
+        "javascript",
+        "js"
+    ],
+    "homepage": "https://github.com/bexvibi/laravel-js-settings",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vildan Bina",
+            "homepage": "https://github.com/bexvibi",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^5.4 || ^7.0",
+        "illuminate/config": "^4.2 || ^5.0 || ^6.0 || ^7.0",
+        "illuminate/console": "^4.2 || ^5.0 || ^6.0 || ^7.0",
+        "illuminate/filesystem": "^4.2 || ^5.0 || ^6.0 || ^7.0",
+        "tedivm/jshrink": "~1.0",
+        "oriceon/laravel-settings": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "bexvibi\\SettingsJs\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "bexvibi\\SettingsJs\\LaravelJsSettingsServiceProvider"
+            ]
+        }
+    }
+}
