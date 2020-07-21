@@ -48,17 +48,28 @@
     };
 
     /**
+     * Parse a setting key into dots.
+     *
+     * @return {string} A key object with source and entries properties.
+     * @param path
+     * @param obj
+     * @param seperator
+     */
+    Settings.prototype._parseKey = function (path, obj = this.settings, seperator = '.') {
+        var properties = Array.isArray(path) ? path : path.split(seperator);
+        return properties.reduce((prev, curr) => prev && prev[curr], obj);
+    };
+
+    /**
      * Get a translation setting.
      *
      * @param key {string} The key of the setting.
-     * @param replacements {object} The replacements to be done in the setting.
-     * @param locale {string} The locale to use, if not passed use the default locale.
+     * @param defaultValue
      *
      * @return {string} The translation setting, if not found the given key.
      */
     Settings.prototype.get = function (key, defaultValue = null) {
-        // console.log(this.settings);
-        return this.settings[key] || defaultValue;
+        return this._parseKey(key) || defaultValue;
     };
 
     return Settings;

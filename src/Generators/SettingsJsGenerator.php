@@ -2,6 +2,7 @@
 
 namespace bexvibi\SettingsJs\Generators;
 
+use Exception;
 use Illuminate\Filesystem\Filesystem as File;
 use JShrink\Minifier;
 
@@ -68,17 +69,48 @@ class SettingsJsGenerator
         return $this->file->put($target, $template);
     }
 
-
     /**
      * Return all settings.
      *
      * @param bool $noSort Whether sorting of the settings should be skipped.
      * @return array
      *
-     * @throws \Exception
+     * @throws Exception
      */
     protected function getSettings()
     {
-        return \Settings::getAll();
+        $array = \Settings::getAll();
+
+        if (is_array(config('settings-js.exclude_keys')) && !empty(config('settings-js.exclude_keys')))
+            return $this->filterExcludedSettings($array, config('settings-js.exclude_keys'));
+
+        return $array;
+    }
+
+    /**
+     * With filter excluded keys from setting array.
+     *
+     * @return array|string of wildcard's
+     *
+     * @throws Exception
+     */
+
+    function filterExcludedSettings(array $array, $wildcard)
+    {
+        array_walk($array, function ($value, $key) use (&$arr, $wildcard) {
+            if (is_array($wildcard))
+                $wildcard = implode('|', $wildcard);
+
+            $wildcard = str_replace('*', '.*', $wildcard);
+
+            if (!preg_match('/^' . $wildcard . '$/i', $key)) {
+                if (is_array($value))
+                    return $arr[$key] = $this->filterExcludedSettings($value, $wildcard);
+                else
+                    $arr[$key] = $value;
+            }
+        });
+
+        return $arr;
     }
 }
