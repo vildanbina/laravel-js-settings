@@ -1,9 +1,4 @@
-![Laravel JS Settings - Convert you Laravel settings and use them in the front-end!](banner.svg)
-
-![Laravel 6](https://img.shields.io/badge/Laravel-6-f4645f.svg) 
-[![Latest Stable Version](https://poser.pugx.org/org/bexvibi/laravel-js-settings/v/stable.svg)](https://packagist.org/packages/org/bexvibi/laravel-js-settings)
-[![Total Downloads](https://poser.pugx.org/org/bexvibi/laravel-js-settings/downloads.svg)](https://packagist.org/packages/org/bexvibi/laravel-js-settings)
-[![License](https://poser.pugx.org/bexvibi/laravel-js-settings/license.svg)](https://packagist.org/packages/org/bexvibi/laravel-js-settings)
+[![Latest Stable Version](https://poser.pugx.org/bexvibi/laravel-js-settings/v)](//packagist.org/packages/bexvibi/laravel-js-settings) [![Total Downloads](https://poser.pugx.org/bexvibi/laravel-js-settings/downloads)](//packagist.org/packages/bexvibi/laravel-js-settings) [![Latest Unstable Version](https://poser.pugx.org/bexvibi/laravel-js-settings/v/unstable)](//packagist.org/packages/bexvibi/laravel-js-settings) [![License](https://poser.pugx.org/bexvibi/laravel-js-settings/license)](//packagist.org/packages/bexvibi/laravel-js-settings)
 
 This package convert all your setting key and values who generated (`oriceon/laravel-settings`) from your Laravel app to JavaScript with a small library to interact with those settings following a very similar syntax you are familiar with.
 
