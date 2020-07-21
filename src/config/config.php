@@ -17,4 +17,13 @@ return [
         'smtp_*',
         'doctors_per_page'
     ],
+
+        /*
+     * Extra keys we want to add on JS
+     *
+     * Accept array
+     *
+     * eg.  ['admin_path' => 'admin']
+     */
+    'extra_keys' => [],
 ];

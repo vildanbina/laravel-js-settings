@@ -79,6 +79,9 @@ class SettingsJsGenerator
     {
         $array = \Settings::getAll();
 
+        if(is_array(config('settings-js.extra_keys')) && !empty(config('settings-js.extra_keys')))
+            $array = array_merge($array, config('settings-js.extra_keys'));
+
         if (is_array(config('settings-js.exclude_keys')) && !empty(config('settings-js.exclude_keys')))
             return $this->filterExcludedSettings($array, config('settings-js.exclude_keys'));
 
