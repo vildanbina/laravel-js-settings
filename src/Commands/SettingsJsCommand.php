@@ -110,9 +110,9 @@ class SettingsJsCommand extends Command
         return [
             ['compress', 'c', InputOption::VALUE_NONE, 'Compress the JavaScript file.', null],
             ['no-lib', 'nl', InputOption::VALUE_NONE, 'Do not include the settings.js library.', null],
-            ['json', 'j', InputOption::VALUE_NONE, 'Only output the messages json.', null],
+            ['json', 'j', InputOption::VALUE_NONE, 'Only output the settings json.', null],
             ['source', 's', InputOption::VALUE_REQUIRED, 'Specifying a custom source folder', null],
-            ['no-sort', 'ns', InputOption::VALUE_NONE, 'Do not sort the messages', null],
+            ['no-sort', 'ns', InputOption::VALUE_NONE, 'Do not sort the settings', null],
         ];
     }
 }

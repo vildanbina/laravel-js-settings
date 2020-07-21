@@ -48,7 +48,7 @@ class SettingsJsGenerator
      */
     public function generate($target, $options)
     {
-        $messages = $this->getSettings();
+        $settings = $this->getSettings();
 
         if ($options['no-lib']) {
             $template = $this->file->get(__DIR__ . '/Templates/settings.js');
@@ -60,7 +60,7 @@ class SettingsJsGenerator
             $template = str_replace('\'{ settingsjs }\';', $settingsJs, $template);
         }
 
-        $template = str_replace('\'{ settings }\'', json_encode($messages), $template);
+        $template = str_replace('\'{ settings }\'', json_encode($settings), $template);
 
         if ($options['compress']) {
             $template = Minifier::minify($template);
