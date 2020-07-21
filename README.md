@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/org/bexvibi/laravel-js-settings/downloads.svg)](https://packagist.org/packages/org/bexvibi/laravel-js-settings)
 [![License](https://poser.pugx.org/bexvibi/laravel-js-settings/license.svg)](https://packagist.org/packages/org/bexvibi/laravel-js-settings)
 
-This package convert all your setting key and values who generated (`oriceon/laravel-settings`) from your Laravel app to JavaScript with a small library to interact with those messages following a very similar syntax you are familiar with.
+This package convert all your setting key and values who generated (`oriceon/laravel-settings`) from your Laravel app to JavaScript with a small library to interact with those settings following a very similar syntax you are familiar with.
 
 ## Features
 
@@ -83,13 +83,13 @@ return [
 This is a quick documentation regarding   this package
 
 
-### Getting a message
+### Getting a setting
 
 ```js
 Settings.get('foo');
 ```
 
-### Getting a message with default value
+### Getting a setting with default value
 
 ```js
 Settings.get('foo', 'bar');
