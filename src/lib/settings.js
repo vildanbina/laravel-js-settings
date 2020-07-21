@@ -8,6 +8,7 @@
         // NodeJS support.
         module.exports = factory();
     } else {
+
         // Browser global support.
         root.Settings = factory();
     }
@@ -72,6 +73,8 @@
         return this._parseKey(key) || defaultValue;
     };
 
-    return Settings;
+    Settings = new Settings();
+    Settings.setSettings('{ settings }');
 
+    return Settings;
 }));

@@ -55,9 +55,7 @@ class SettingsJsGenerator
         } else if ($options['json']) {
             $template = $this->file->get(__DIR__ . '/Templates/settings.json');
         } else {
-            $template = $this->file->get(__DIR__ . '/Templates/js_with_settings.js');
-            $settingsJs = $this->file->get(__DIR__ . '/../lib/settings.min.js');
-            $template = str_replace('\'{ settingsjs }\';', $settingsJs, $template);
+            $template = $this->file->get(__DIR__ . '/../lib/settings.min.js');
         }
 
         $template = str_replace('\'{ settings }\'', json_encode($settings), $template);
