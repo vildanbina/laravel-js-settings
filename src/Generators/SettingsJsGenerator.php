@@ -1,6 +1,6 @@
 <?php
 
-namespace bexvibi\SettingsJs\Generators;
+namespace vildanbina\SettingsJs\Generators;
 
 use Exception;
 use Illuminate\Filesystem\Filesystem as File;

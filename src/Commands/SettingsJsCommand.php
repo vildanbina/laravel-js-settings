@@ -1,8 +1,8 @@
 <?php
 
-namespace bexvibi\SettingsJs\Commands;
+namespace vildanbina\SettingsJs\Commands;
 
-use bexvibi\SettingsJs\Generators\SettingsJsGenerator;
+use vildanbina\SettingsJs\Generators\SettingsJsGenerator;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;

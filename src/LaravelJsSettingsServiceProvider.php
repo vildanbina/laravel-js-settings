@@ -1,8 +1,8 @@
 <?php
 
-namespace bexvibi\SettingsJs;
+namespace vildanbina\SettingsJs;
 
-use bexvibi\SettingsJs\Generators\SettingsJsGenerator;
+use vildanbina\SettingsJs\Generators\SettingsJsGenerator;
 use Illuminate\Support\ServiceProvider;
 
 /**

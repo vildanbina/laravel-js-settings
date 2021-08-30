@@ -1,5 +1,5 @@
 {
-    "name": "bexvibi/laravel-js-settings",
+    "name": "vildanbina/laravel-js-settings",
     "description": "Laravel Settings in JavaScript",
     "type": "library",
     "keywords": [
@@ -10,12 +10,12 @@
         "javascript",
         "js"
     ],
-    "homepage": "https://github.com/bexvibi/laravel-js-settings",
+    "homepage": "https://github.com/vildanbina/laravel-js-settings",
     "license": "MIT",
     "authors": [
         {
             "name": "Vildan Bina",
-            "homepage": "https://github.com/bexvibi",
+            "homepage": "https://github.com/vildanbina",
             "role": "Developer"
         }
     ],
@@ -26,14 +26,14 @@
     },
     "autoload": {
         "psr-4": {
-            "bexvibi\\SettingsJs\\": "src/"
+            "vildanbina\\SettingsJs\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "bexvibi\\SettingsJs\\LaravelJsSettingsServiceProvider"
+                "vildanbina\\SettingsJs\\LaravelJsSettingsServiceProvider"
             ]
         }
     }

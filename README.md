@@ -1,4 +1,4 @@
-[![Latest Stable Version](https://poser.pugx.org/bexvibi/laravel-js-settings/v)](//packagist.org/packages/bexvibi/laravel-js-settings) [![Total Downloads](https://poser.pugx.org/bexvibi/laravel-js-settings/downloads)](//packagist.org/packages/bexvibi/laravel-js-settings) [![Latest Unstable Version](https://poser.pugx.org/bexvibi/laravel-js-settings/v/unstable)](//packagist.org/packages/bexvibi/laravel-js-settings) [![License](https://poser.pugx.org/bexvibi/laravel-js-settings/license)](//packagist.org/packages/bexvibi/laravel-js-settings)
+[![Latest Stable Version](https://poser.pugx.org/vildanbina/laravel-js-settings/v)](//packagist.org/packages/vildanbina/laravel-js-settings) [![Total Downloads](https://poser.pugx.org/vildanbina/laravel-js-settings/downloads)](//packagist.org/packages/vildanbina/laravel-js-settings) [![Latest Unstable Version](https://poser.pugx.org/vildanbina/laravel-js-settings/v/unstable)](//packagist.org/packages/vildanbina/laravel-js-settings) [![License](https://poser.pugx.org/vildanbina/laravel-js-settings/license)](//packagist.org/packages/vildanbina/laravel-js-settings)
 
 This package convert all your setting key and values who generated (`oriceon/laravel-settings`) from your Laravel app to JavaScript with a small library to interact with those settings following a very similar syntax you are familiar with.
 
@@ -11,13 +11,13 @@ This package convert all your setting key and values who generated (`oriceon/lar
 ## Installation
 
 ```shell
-composer require bexvibi/laravel-js-settings
+composer require vildanbina/laravel-js-settings
 ```
 
 In your Laravel app go to `config/app.php` and add the following service provider:
 
 ```php
-bexvibi\SettingsJs\LaravelJsSettingsServiceProvider::class
+vildanbina\SettingsJs\LaravelJsSettingsServiceProvider::class
 ```
 
 ## Usage
@@ -53,7 +53,7 @@ php artisan settings:js --json
 First, publish the default package's configuration file running:
 
 ```shell
-php artisan vendor:publish --provider="bexvibi\SettingsJs\LaravelJsSettingsServiceProvider"
+php artisan vendor:publish --provider="vildanbina\SettingsJs\LaravelJsSettingsServiceProvider"
 ```
 
 The configuration will be published to `config/settings-js.php`.
@@ -124,7 +124,7 @@ Now you are good to go! Happy coding!
 
 <div align=center>
 
-Made with :heart: by [Vildan Bina](https://github.com/bexvibi).
+Made with :heart: by [Vildan Bina](https://github.com/vildanbina).
 
 [MIT license](LICENSE)
 
