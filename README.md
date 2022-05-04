@@ -1,4 +1,8 @@
-[![Latest Stable Version](https://poser.pugx.org/vildanbina/laravel-js-settings/v)](//packagist.org/packages/vildanbina/laravel-js-settings) [![Total Downloads](https://poser.pugx.org/vildanbina/laravel-js-settings/downloads)](//packagist.org/packages/vildanbina/laravel-js-settings) [![Latest Unstable Version](https://poser.pugx.org/vildanbina/laravel-js-settings/v/unstable)](//packagist.org/packages/vildanbina/laravel-js-settings) [![License](https://poser.pugx.org/vildanbina/laravel-js-settings/license)](//packagist.org/packages/vildanbina/laravel-js-settings)
+[![Latest Stable Version](http://poser.pugx.org/vildanbina/laravel-js-settings/v)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![Total Downloads](http://poser.pugx.org/vildanbina/laravel-js-settings/downloads)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![Latest Unstable Version](http://poser.pugx.org/vildanbina/laravel-js-settings/v/unstable)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![License](http://poser.pugx.org/vildanbina/laravel-js-settings/license)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![PHP Version Require](http://poser.pugx.org/vildanbina/laravel-js-settings/require/php)](https://packagist.org/packages/vildanbina/laravel-js-settings)
 
 This package convert all your setting key and values who generated (`oriceon/laravel-settings`) from your Laravel app to JavaScript with a small library to interact with those settings following a very similar syntax you are familiar with.
 
@@ -97,12 +101,6 @@ Settings.get('foo', 'bar');
 Settings.has('foo');
 ```
    
-## Want to contribute?
-
- 1. Fork this repository and clone it.
- 2. Create a [feature branch](https://guides.github.com/introduction/flow/) from develop: `git checkout develop; git checkout -b feature-foo`.
- 3. Push your commits and create a pull request.
-
 ### Prerequisites:
 
 You will need to have installed the following softwares.
@@ -119,13 +117,20 @@ After getting all the required softwares you may run the following commands to g
     composer install
     ```
  
-Now you are good to go! Happy coding!
- 
 
-<div align=center>
+## Contributing
 
-Made with :heart: by [Vildan Bina](https://github.com/vildanbina).
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
-[MIT license](LICENSE)
+## Security Vulnerabilities
 
-</div>
+Please e-mail vildanbina@gmail.com to report any security vulnerabilities instead of the issue tracker.
+
+## Credits
+
+- [Vildan Bina](https://github.com/vildanbina)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
