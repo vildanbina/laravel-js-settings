@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": "^5.4 || ^7.0",
+        "php": "^5.4 || ^7.0 || ^8.0",
         "tedivm/jshrink": "~1.0",
         "oriceon/laravel-settings": "^1.6"
     },
