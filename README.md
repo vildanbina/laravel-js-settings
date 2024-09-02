@@ -1,8 +1,8 @@
-[![Latest Stable Version](http://poser.pugx.org/vildanbina/laravel-js-settings/v)](https://packagist.org/packages/vildanbina/laravel-js-settings)
-[![Total Downloads](http://poser.pugx.org/vildanbina/laravel-js-settings/downloads)](https://packagist.org/packages/vildanbina/laravel-js-settings)
-[![Latest Unstable Version](http://poser.pugx.org/vildanbina/laravel-js-settings/v/unstable)](https://packagist.org/packages/vildanbina/laravel-js-settings)
-[![License](http://poser.pugx.org/vildanbina/laravel-js-settings/license)](https://packagist.org/packages/vildanbina/laravel-js-settings)
-[![PHP Version Require](http://poser.pugx.org/vildanbina/laravel-js-settings/require/php)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![Latest Stable Version](https://poser.pugx.org/vildanbina/laravel-js-settings/v)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![Total Downloads](https://poser.pugx.org/vildanbina/laravel-js-settings/downloads)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![Latest Unstable Version](https://poser.pugx.org/vildanbina/laravel-js-settings/v/unstable)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![License](https://poser.pugx.org/vildanbina/laravel-js-settings/license)](https://packagist.org/packages/vildanbina/laravel-js-settings)
+[![PHP Version Require](https://poser.pugx.org/vildanbina/laravel-js-settings/require/php)](https://packagist.org/packages/vildanbina/laravel-js-settings)
 
 This package convert all your setting key and values who generated (`oriceon/laravel-settings`) from your Laravel app to JavaScript with a small library to interact with those settings following a very similar syntax you are familiar with.
 
